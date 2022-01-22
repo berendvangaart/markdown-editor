@@ -8,6 +8,8 @@ function createWindow() {
   const win = new BrowserWindow({
     width: 800,
     height: 600,
+    vibrancy: 'under-window',
+    visualEffectState: 'active',
     webPreferences: {
       nodeIntegration: true,
     },
