@@ -1,10 +1,13 @@
 import {useDispatch, useSelector} from "react-redux";
-import {decreaseCounter, increaseCounter} from "./Store/Counter/counter.actions";
+import { Store } from "./interfaces/counter-types";
+import {decreaseCounter, increaseCounter} from "./store/Counter/counter.actions";
 
 function App() {
 
   const dispatch = useDispatch()
-  const state = useSelector((state) => state.counter)
+  const state = useSelector((state: Store) => state.counter)
+
+
 
   return (
     <div>
