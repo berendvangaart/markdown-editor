@@ -30,7 +30,7 @@ const Parser: FC<ParserProps> = ({markdown}) => {
                                    )
                                }
                            }}
-            >{markdown}</ReactMarkdown>
+             children={markdown}/>
         </div>
     );
 };
