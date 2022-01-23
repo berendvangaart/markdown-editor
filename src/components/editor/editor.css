@@ -1,0 +1,12 @@
+.CodeMirror-gutters {
+    border-right: 1px solid transparent;
+    background-color: transparent;
+    white-space: nowrap;
+}
+
+.CodeMirror {
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+}
+
