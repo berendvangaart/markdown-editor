@@ -1,8 +1,6 @@
 import React, {FC} from 'react';
 import 'codemirror/lib/codemirror.css'
-
 import 'codemirror/mode/markdown/markdown'
-
 import './editor.css'
 import {Controlled} from "react-codemirror2";
 
@@ -19,17 +17,15 @@ const Editor: FC<EditorProps> = ({value,onChange}) => {
 
     return (
         <>
-            <h1>hello editor</h1>
             <Controlled
                 onBeforeChange={handleChange}
                 value={value}
                 options={{
-
                     lineWrapping: true,
                     lint: true,
                     mode: "markdown",
                     lineNumbers: true,
-                    theme: 'midnight'
+                    highlightFormatting: true,
                 }}
             />
         </>
