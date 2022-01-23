@@ -12,6 +12,7 @@ type EditorProps = {
 const Editor: FC<EditorProps> = ({value,onChange}) => {
 
     const handleChange = (editor: any, data: any, value: string) => {
+        console.log(value)
         onChange(value)
     }
 
@@ -25,6 +26,7 @@ const Editor: FC<EditorProps> = ({value,onChange}) => {
                     lint: true,
                     mode: "markdown",
                     lineNumbers: true,
+
                     highlightFormatting: true,
                 }}
             />
