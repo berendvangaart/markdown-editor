@@ -1,13 +1,11 @@
 import './app.css'
-import Editor from "./components/editor/editor";
-import {useState} from "react";
+import EditorContainer from "./components/editor-container/editor-container";
 
 function App() {
-  const [markdown, setMarkdown] = useState('')
 
   return (
     <div className={'app'}>
-      <Editor value={markdown} onChange={setMarkdown}/>
+        <EditorContainer/>
     </div>
   );
 }
