@@ -16,7 +16,7 @@ const Editor: FC<EditorProps> = ({value,onChange}) => {
     }
 
     return (
-        <div className={'container'}>
+        <div className={'editorcontainer'}>
             <Controlled
                 onBeforeChange={handleChange}
                 value={value}
